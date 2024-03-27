@@ -47,6 +47,8 @@ def extract_amount(dirpath: str) -> float:
             if ch not in ('$',','):
                 str+=ch
         f.append(float(str))
+    #Change1
+    amount = 0
     if len(c)==0 and len(d)!=0:
         amount=np.max(d)
     elif len(d)==0 and len(c)!=0:
